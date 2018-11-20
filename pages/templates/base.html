@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+<header>
+  <a href="{% url 'home' %}">Strona Główna</a> | <a href="{% url 'about' %}">Formularz kontaktowy</a> | <a href="{% url 'autor' %}">Autor</a>
+</header>
+
+<head>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+{% block content %}
+{% endblock content %}

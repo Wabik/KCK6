@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+  <h1>Pytania</h1>
+  <form>
+    Masz pytanie? Skorzystaj z poniższego formularza:
+    <br>
+    <br>
+    Imię:
+    <br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Nazwisko:
+    <br>
+    <input type="text" name="lastname" value="">
+    <br>
+    E-mail:
+    <br>
+    <input type="text" name="email" value="">
+    <br>
+    Numer telefonu:
+    <br>
+    <input type="text" name="telefon" value="">
+    <br>
+    Pytania związane z funkcjonowniem drużyny:
+    <br>
+    <textarea name="content" rows="3" cols="25"></textarea>
+    <br>
+    <input type="submit" value="Wyślij">
+  </form>
+</center>
+{% endblock content %}
